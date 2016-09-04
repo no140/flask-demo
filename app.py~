@@ -31,11 +31,11 @@ def graph():
     x=x[x>=month]
     y=y[0:len(x)]
     print('starting to graph')
-    title = ticker+' closing prices over past month'
+    title = ticker+' Closing Price'
     p = figure(x_axis_type="datetime", title=title)
     p.grid.grid_line_alpha = 0.5
-    p.xaxis.axis_label = 'Date (m-d)'
-    p.yaxis.axis_label = 'Price ($)'
+    p.xaxis.axis_label = 'Date'
+    p.yaxis.axis_label = 'Price'
     p.ygrid.band_fill_color = "olive"
     p.ygrid.band_fill_alpha = 0.1
     p.line(x, y, color='navy')
